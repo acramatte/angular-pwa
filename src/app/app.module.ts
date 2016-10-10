@@ -6,6 +6,7 @@ import {MaterialModule} from '@angular/material';
 import { AppShellModule } from '@angular/app-shell';
 
 import { AppComponent } from './app.component';
+import { PrerenderedModule } from './prerendered';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     MaterialModule.forRoot(),
-    AppShellModule
+    AppShellModule.prerender()
   ],
   providers: [],
   bootstrap: [AppComponent]
